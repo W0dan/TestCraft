@@ -50,9 +50,9 @@ namespace TestCraft.Tests.Given_a_testrunner
         }
 
         [Test]
-        public void It_should_display_the_stacktrace_for_any_unexpected_thrown_exceptions()
+        public void It_should_display_the_stacktrace_for_any_failed_test()
         {
-            _consoleMock.Verify(x => x.SetStyleExceptionStacktrace());
+            _consoleMock.Verify(x => x.SetStyleExceptionStacktrace(),Times.Exactly(TotalNumberOfFailingTests));
         }
     }
 }
