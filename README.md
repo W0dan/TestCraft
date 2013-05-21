@@ -8,7 +8,7 @@ This project was born out of an urge to do TDD with Visual Studio Webdeveloper. 
 install plugins into Visual Studio Express, I started looking for a suitable testrunner. My requirements were
 (are) that you can at least run all the tests of an arbitrary project / solution.
 I found something that was almost right (http://nharness.codeplex.com/), but it required a fixed reference from
-the testrunner to the test project. It also required the testrunner to know all the testfixtures in your 
+the testrunner to the test project. It also required the testrunner to know all the testfixtures in the 
 test project.
 So I started writing my own (though I must admit that I have borrowed some code from NHarness).
 
